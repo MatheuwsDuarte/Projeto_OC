@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    ViewBag.Title = "Cadastro";
+}
+<link href="~/Content/styleCadastro.css" rel="stylesheet" />
+
+<section id="cadastro">
+
+    <table>
+
+        <caption>
+            Cadastros >
+            <a href="~/Colaborador/Cadastro"> Novo cadastro </a>
+        </caption>
+
+        <thead>
+
+            <tr>
+
+                <th scope="col" class="nome">NOME
+                <th scope="col" class="email">E-MAIL
+                <th scope="col" class="stats">TELEFONE
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @foreach (var colaboradores in Model){
+                <tr id="colaboradores-@colaboradores.id_colaborador">
+
+                    <td> @colaboradores.Nome
+                    <td> @colaboradores.email
+                    <td> @colaboradores.telefone
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+

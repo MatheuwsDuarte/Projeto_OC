@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+:root{
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontdestaque: 'Russo One', sans-serif;
+
+}
+
+main{
+
+    position: absolute;
+    top: 95%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+
+    height: 67vw;
+    width: 71vw;
+
+
+    background-color: whitesmoke;
+
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main > div{
+
+    padding: 5px;
+
+}
+main > div > h1{
+
+    top: 5%;
+
+    font-size: 1.2em;
+    font-family: var(--fontepadrao);
+
+    color: rgba(128, 128, 128, 0.616);
+}
+
+main > div > p{
+
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+
+    font-family: var(--fontepadrao);
+}
+
+main > form {
+
+    display: block;
+    padding: 5px;
+
+}
+
+main > form > h2{
+
+    font-size: 1.1em;
+    font-family: var(--fontepadrao);
+
+    color: black;
+
+    border-bottom: 0.1ch solid;
+    border-color: grey;
+
+}
+
+main > form > div#nome{
+
+    padding: 5px;
+
+}
+
+main > form > div#nome > label{
+
+   position: absolute;
+   top: 10%;
+   left: 4%;
+   transform: translate(-50%, -50%);
+
+   font-family: var(--fontepadrao);
+   font-size: 1em;
+
+}
+
+main > form > div#nome > input{
+
+   position: absolute;
+   top: 13%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+   font-family: var(--fontepadrao);
+
+
+}
+
+main > form > div#idade{
+
+   display: block;
+   padding: 5px;
+
+}
+
+main > form > div#idade > label{
+
+   position: absolute;
+   top: 18%;
+   left: 4%;
+   transform: translate(-50%, -50%);
+
+   font-family: var(--fontepadrao);
+   font-size: 1em;
+
+}
+
+
+main > form > div#idade > input{
+
+   position: absolute;
+   top: 21%;
+   left: 8%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+   font-family: var(--fontepadrao);
+ 
+ }
+
+ main > form > div#email{
+
+   display: block;
+   padding: 5px;
+
+}
+
+main > form > div#email > label{
+
+   position: absolute;
+   top: 18%;
+   left: 18%;
+   transform: translate(-50%, -50%);
+
+   font-family: var(--fontepadrao);
+   font-size: 1em;
+}
+
+
+main > form > div#email > input{
+
+   position: absolute;
+   top: 21%;
+   left: 57%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+   font-family: var(--fontepadrao);
+ 
+ }
+
+ main > form > div#endereco{
+
+   display: block;
+   padding: 5px;
+
+}
+
+main > form > div#endereco > label{
+
+   position: absolute;
+   top: 26%;
+   left: 5%;
+   transform: translate(-50%, -50%);
+
+   font-family: var(--fontepadrao);
+   font-size: 1em;
+
+}
+
+main > form > div#endereco > input{
+
+   position: absolute;
+   top: 29%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+   font-family: var(--fontepadrao);
+
+}
+
+main > form > div#outrasinfo{
+
+   display: block;
+   padding: 5px;
+
+}
+
+main > form > div#outrasinfo > label{
+
+   position: absolute;
+   top: 36%;
+   left: 9%;
+   transform: translate(-50%, -50%);
+
+   font-family: var(--fontepadrao);
+   font-size: 1em;
+
+}
+
+main > form > div#outrasinfo> input{
+
+   position: absolute;
+   top: 39%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+   font-family: var(--fontepadrao);
+
+}
+
+main > form > div#telefone{
+
+   display: block;
+
+   padding: 5px;
+
+}
+
+main > form > div#telefone > label{
+
+   position: absolute;
+   top: 46%;
+   left: 5%;
+   transform: translate(-50%, -50%);
+
+   font-family: var(--fontepadrao);
+   font-size: 1em;
+
+}
+
+main > form > div#telefone > input{
+
+   position: absolute;
+   top: 49%;
+   left: 11%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+   font-family: var(--fontepadrao);
+
+}
+
+main > form > h2#interesse{
+
+   position: absolute;
+   top: 56%;
+   left: 8%;
+   transform: translate(-50%, -50%);
+
+}
+
+main > form > div#interesses >textarea{
+
+   position: absolute;
+   top: 62%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+}
+
+main > form > h2#sentimento{
+
+   position: absolute;
+   top: 69%;
+   left: 9%;
+   transform: translate(-50%, -50%);
+
+}
+
+main > form > div#sentimentos >textarea{
+
+   position: absolute;
+   top: 75%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+}
+
+main > form > h2#valor{
+
+   position: absolute;
+   top: 82%;
+   left: 7%;
+   transform: translate(-50%, -50%);
+
+}
+
+main > form > div#valores >textarea{
+
+   position: absolute;
+   top: 88%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 5px;
+
+}
+
+
+main > form > p > input[type="submit"]{
+
+   position: absolute;
+   top: 95%;
+   left: 40%;
+   transform: translate(-50%, -50%);
+
+   width: 9%;
+   height: 30px;
+
+   background-color: green;
+   color: white;
+
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+
+   font-family: var(--fontdestaque);
+   font-size: 1em;
+
+}
+
+main > form > p > input[type="reset"]{
+
+   position: absolute;
+   top: 95%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   width: 9%;
+   height: 30px;
+
+   background-color: red;
+   color: white;
+
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 5px;
+
+   font-family: var(--fontdestaque);
+   font-size: 1em;
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+:root{
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontdestaque: 'Russo One', sans-serif;
+
+}
+
+main{
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 41vw;
+    width: 70vw;
+
+    background-color: whitesmoke;
+
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main > section#relatorio{
+
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 310px;
+
+    background-color: whitesmoke;
+
+    padding: 10px;
+
+}
+
+main > section#relatorio > table{
+
+    width: 950px;
+
+    border-collapse: collapse;
+    border-right: none;
+
+    font-family: var(--fontepadrao);
+
+}
+
+main > section#relatorio > table > caption{
+
+    color: grey;
+    /*font-weight: bold; */
+
+    font-family: var(--fontdestaque);
+    font-size: 1.2em;
+    text-align: left;
+
+    padding-top : 20px;
+    padding-bottom : 30px;
+
+}
+
+main > section#relatorio> table > thead > tr >th{ 
+
+    text-align: left;
+    text-decoration: none;
+
+    color: rgba(128, 128, 128, 0.644);
+
+}
+
+main > section#relatorio > table > tbody > tr >td{ 
+
+    border-top: 0.1ch solid;
+    border-bottom: 00.1ch solid;
+    border-color: grey;
+    padding: 10px;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main > section#relatorio > table > tbody > tr >td > a{ 
+
+    text-decoration: none;
+    color: gray;
+ 
+}

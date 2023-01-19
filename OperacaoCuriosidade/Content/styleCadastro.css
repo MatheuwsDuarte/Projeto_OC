@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+:root{
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontdestaque: 'Russo One', sans-serif;
+
+}
+
+main {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 41vw;
+    width: 70vw;
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    main > section#cadastro {
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  
+        max-width: max-content;
+        max-height: max-content;
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+
+main > section#cadastro > table > caption > form > input[type=submit]{
+
+    position: relative;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
+    width: 20%;
+    height: 40px;
+
+    background-color: green;
+    color: white;
+  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1em;
+    font-family: var(--fontdestaque);
+
+}
+
+main > section#cadastro > table{
+
+    width: 950px;
+
+    border-collapse: collapse;
+    border-right: none;
+
+    font-family: var(--fontepadrao);
+
+}
+
+main > section#cadastro > table > caption{
+
+    color: grey;
+    /*font-weight: bold; */
+
+    padding-top : 20px;
+    padding-bottom : 30px;
+
+    font-family: var(--fontdestaque);
+    font-size: 1.2em;
+
+    text-align: left;
+    
+
+}
+
+    main > section#cadastro > table > caption > a {
+        color: rgba(128, 128, 128, 0.644);
+        /*font-weight: bold; */
+
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    main > section#cadastro > table > caption > a:hover {
+        color: cornflowerblue;
+       
+    }
+
+main > section#cadastro > table > thead > tr >th{ 
+
+    color: rgba(128, 128, 128, 0.644);
+
+    text-align: left;
+    text-decoration: none;
+
+}
+
+main > section#cadastro > table > tbody > tr >td{ 
+
+    border-top: 0.1ch solid;
+    border-color: grey;
+    padding: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+
+}

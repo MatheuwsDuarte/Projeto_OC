@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+   
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+
+    display: none;
+
+}
+
+nav{
+
+    display: none;
+
+}
+
+section#listagem > table > caption > form > input[type="button"]{
+
+    display: none;
+
+}
+
+section#listagem > table > tbody > tr > td > a{
+
+    display: none;
+}
+
+section#listagem {
+ 
+    text-decoration: none;
+}

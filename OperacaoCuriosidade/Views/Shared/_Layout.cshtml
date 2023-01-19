@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OperacaoC</title>
+
+    <link rel="shortcut icon" href="Imagens/onion.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="~/Content/styleMenu.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <section id="pesquisar">
+            <form action="~/Colaborador/Listagem" method="post">
+
+                <a><span class="material-symbols-outlined">
+                        search
+                    </span></a>
+                <input type="search" placeholder="Pesquisar" size="40" name="Pesquisa">
+
+            </form>
+        </section>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <section id="pessoa">
+                <p> @User.Identity.Name </p>
+            </section>
+
+            <section id="sair">
+                <a href=@Url.Action("LogOut", "Home")> SAIR </a>
+            </section>
+        }else
+        {
+            <section id="sair">
+                <a href=@Url.Action("Index", "Home")> LOGIN </a>
+            </section>
+        }
+
+    </header>
+
+    <nav>
+       <section id="ioc">
+            <h1> OC </h1>
+       </section>
+
+        <menu>
+            <ul>
+                <li>
+                    <a href="~/Home/Dashboard">
+                        <span id=" iconem" class="material-symbols-outlined">
+                            home
+                        </span> Home
+                    </a>
+                </li>
+                </a>
+                </li>
+
+                <li>
+                    <a href="~/Colaborador/">
+                        <span id=" iconem" class="material-symbols-outlined">
+                            how_to_reg
+                        </span> Cadastro
+                    </a>
+                </li>
+                </a>
+                </li>
+
+                <li>
+                    <a href="~/Colaborador/Relatorio">
+                        <span id=" iconem" class="material-symbols-outlined">
+                            receipt_long
+                        </span> Relatório
+                    </a>
+                </li>
+                </a>
+                </li>
+            </ul>
+        </menu>
+    </nav>
+        <main>
+            @RenderBody()
+        </main>
+</body>
+</html>

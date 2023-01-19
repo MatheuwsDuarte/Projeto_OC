@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    height: 100vh;
+    width: 100vh;
+
+}
+
+html{
+
+    background-color: rgba(128, 128, 128, 0.452);
+}
+
+header{
+
+    display: inline-block;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 10vh;
+    width: 155vh;
+    max-width: 300px;
+    min-width: 950px;
+
+    background-color: whitesmoke;
+
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+section#pesquisar{
+
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+
+}
+
+header > section#pesquisar > form > a {
+  
+    border-color:white;
+  font-size: 1.1em;
+}
+
+header > section#pesquisar > form > input[type=search] {
+    border-radius: 2px;
+    font-size: 1.1em;
+}
+
+
+
+section#pessoa{
+
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 30vh;
+
+    background-color: #7f00b2;
+}
+
+header > section#pessoa > div#foto{
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(128, 128, 128, 0.329);
+
+    border-radius: 5px;
+
+}
+
+header > section#pessoa >  p{
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+
+    width: 30vh;
+
+    font-family: Arial;
+    font-size: large;
+
+}
+
+header >section#sair{
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+
+    font-family: var(--fontdestaque);
+    font-size: large;
+
+    cursor: pointer;
+}
+
+header section#sair > a{
+
+    text-decoration: none;
+}
+
+nav{
+
+    height: 111vh;
+    width: 27vh;
+
+    background-color: whitesmoke;
+
+}
+
+nav h1{
+
+    background-color: whitesmoke;
+
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1px;
+
+    font-size: xx-large;
+    text-align: center;
+    font-family: var(--fontdestaque);
+
+}
+
+menu{
+
+    display: block;
+
+}
+
+menu > ul{
+
+    list-style-type: none;
+
+}
+
+menu > ul > li > a{
+
+    display: block;
+
+    background-color: rgba(128, 128, 128, 0.212);
+    color: black;
+
+    text-decoration: none;
+    text-align: left;
+
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+menu > ul > li > a:hover{
+
+    background-color: rgba(255, 255, 255, 0.685);
+
+}
+
+i#iconem{
+
+    text-align: left;
+    
+    padding: 10px;
+}

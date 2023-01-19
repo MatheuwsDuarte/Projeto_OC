@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+:root{
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontdestaque: 'Russo One', sans-serif;
+
+}
+
+main{
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 41vw;
+    width: 70vw;
+
+    background-color: whitesmoke;
+
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main > section#listagem{
+
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 310px;
+
+    background-color: whitesmoke;
+
+    padding: 10px;
+
+}
+
+main > section#listagem > table > caption > form > input[type=button]{
+
+    position: relative;
+    top: 15%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+
+    width: 15%;
+    height: 30px;
+
+    background-color: green;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: var(--fontdestaque);
+    font-size: 0.9em;
+
+}
+
+main > section#listagem> table{
+
+    width: 950px;
+
+    border-collapse: collapse;
+    border-right: none;
+
+    font-family: var(--fontepadrao);
+
+}
+
+main > section#listagem > table > caption{
+
+    color: grey;
+    /*font-weight: bold; */
+
+    font-family: var(--fontdestaque);
+    font-size: 1.2em;
+    text-align: left;
+
+    padding-top : 20px;
+    padding-bottom : 30px;
+
+}
+
+main > section#listagem > table > thead > tr >th{ 
+
+    text-align: left;
+    text-decoration: none;
+    
+    color: rgba(128, 128, 128, 0.644);
+
+}
+
+
+main > section#listagem > table > tbody > tr >td{ 
+
+    border-top: 0.1ch solid;
+    border-color: grey;
+    padding: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main > section#listagem > table > tbody > tr:hover{ 
+    color: green;
+}
+
+    main > section#listagem > table > tbody > tr > td > a {
+        text-decoration: none;
+        color: grey;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+main > section#listagem > table > tbody > tr > td > a#edit:hover {
+
+    color: blue;
+}
+
+main > section#listagem > table > tbody > tr > td > a#remove:hover {
+ 
+    color: red;
+
+}

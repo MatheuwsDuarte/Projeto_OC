@@ -1,0 +1,101 @@
+﻿@model LoginVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+
+    <link rel="shortcut icon" href="Imagens/onion.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link href="~/Content/styleLogin.css" rel="stylesheet" />
+    <script src="~/Scripts/script.js"></script>
+
+</head>
+<body>
+
+    <main>
+
+        <section id="login">
+
+            <div id="titulo">
+
+                <h1> OC </h1>
+
+            </div>
+
+            <div id="formulario">
+
+                <h1> Operação curiosidade </h1>
+
+                <form action="~/Home/Index" method="post" autocomplete="off" name="formlogin">
+
+                    <div class="campo">
+                        <label for="iemail"></label>
+                        <input type="email" name="email" value="@Model.Email" id="iEmail" minlength="11" size="20" placeholder="Email" autocomplete="email">
+
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" value="@Model.Senha" id="iSenha" minlength="8" size="20" placeholder="Senha" autocomplete="current-password">
+                        <small>
+                            @Html.ValidationMessageFor(model => model.Email, null, new { @class = "text-danger" })
+                        </small>
+                        <small>
+                            @Html.ValidationMessageFor(model => model.Senha, null, new { @class = "text-danger" })
+                        </small>
+                    </div>
+
+                    <div class="check">
+                        <label for="icheckbox"></label>
+                        @Html.CheckBoxFor(model => model.PermanecerLogado)
+                        @Html.LabelFor(model => model.PermanecerLogado)
+                    </div>
+
+                    <input type="submit" value="LOGIN" onclick="validar()">
+
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    function validar(event) {
+
+        var formlogin = document.getElementById('formulario');
+        formulario.addEventListener('submit', validar);
+
+        if ((document.formlogin.iemail.value == "") && (document.formlogin.isenha.value == "")) {
+
+            alert(" E-mail e Senha precisam ser preenchidos.");
+            document.formlogin.email.focus();
+            event.preventDefault();
+        }
+
+        if ((document.formlogin.iemail.value == "")) {
+
+            alert("E-mail precisa ser preenchido");
+            document.email.focus();
+            event.preventDefault();
+        }
+
+        if ((document.formlogin.isenha.value == "")) {
+
+            alert("Senha precisa ser preenchida.");
+            document.email.focus();
+            event.preventDefault();
+        }
+    }
+</script>

@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+:root{
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontdestaque: 'Russo One', sans-serif;
+
+}
+
+main {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 41vw;
+    width: 71vw;
+    background-color: rgba(128, 128, 128, 0);
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main > section > div#tdec{
+
+    display: block;
+    position: absolute;
+    padding: 10px;
+    top: 15%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+
+    height: 10vw;
+    width: 15vw;
+
+    background-color: whitesmoke;
+
+}
+
+main > section > div#tdec > h2{
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: blue;
+
+    font-family: var(--fontepadrao);
+    font-size: 4em;
+    
+}
+
+main > section > div#tdec > p{
+
+    display: block;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+
+    color: grey;
+
+    text-align: right;
+    font-family: var(--fontepadrao);
+
+}
+
+main > section > div#cnoum{
+
+    display: block;
+    position: absolute;
+    padding: 10px;
+    top: 15%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+
+    height: 10vw;
+    width: 20vw;
+
+    background-color: whitesmoke;
+
+}
+
+main > section > div#cnoum > h2{
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: green;
+
+    font-family: var(--fontepadrao);
+    font-size: 4em;
+
+}
+
+main > section > div#cnoum > p{
+
+    display: block;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+
+    color: grey;
+
+    text-align: right;
+    font-family: var(--fontepadrao);
+ 
+}
+
+main > section > div#cpr{
+
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
+    height: 10vw;
+    width: 25vw;
+
+    background-color: whitesmoke;
+
+    padding: 10px;
+
+}
+
+main > section > div#cpr > h2{
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color:red;
+
+    font-family: var(--fontepadrao);
+    font-size: 4em;
+    
+}
+
+main > section > div#cpr > p{
+
+    display: block;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+
+    color: grey;
+
+    font-family: var(--fontepadrao);
+    text-align: right;
+    
+}
+
+ main > section#ultimosC {
+        display: block;
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: max-content;
+        max-height: max-content;
+        height: 370px;
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 10px;
+}
+
+main > section#ultimosC > table {
+            min-width: max-content;
+            min-height: max-content;
+            width: 950px;
+            border-collapse: collapse;
+            border-right: none;
+            font-family: var(--fontepadrao);
+        }
+
+    main > section#ultimosC > table > caption {
+        color: grey;
+        /*font-weight: bold; */
+        font-family: var(--fontdestaque);
+        font-size: 1.2em;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        max-height: max-content;
+    }
+
+main > section#ultimosC > table > thead > tr >th{ 
+
+    text-align: left;
+    text-decoration: none;
+
+    color: rgba(128, 128, 128, 0.644);
+
+}
+
+main > section#ultimosC > table > tbody > tr >td{ 
+
+    border-top: 0.1ch solid;
+    border-color: grey;
+    padding: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+}

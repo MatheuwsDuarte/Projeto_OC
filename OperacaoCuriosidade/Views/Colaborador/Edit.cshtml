@@ -1,0 +1,90 @@
+﻿@model OperacaoCuriosidade.Models.Colaborador
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<link href="~/Content/styleNovoC.css" rel="stylesheet" />
+
+<div>
+
+    <h1> Edit </h1>
+    <p> <input type="radio" required>Ativo</p>
+
+</div>
+
+<form id="formC" action="~/Colaborador/Edit" name="novoC" method="post" autocomplete="off">
+
+    <h2> 1° Fatos e Dados </h2>
+
+    @Html.HiddenFor(m=> m.id_colaborador)
+
+    <div id="nome">
+
+        <label for="inome"> Nome </label>
+        <input type="text" id="inome" name="nome" value="@Model.Nome" placeholder="Nome completo" autocomplete="name" size="130" maxlength="100">
+
+    </div>
+
+    <div id="idade">
+
+        <label for="idade"> Idade </label>
+        <input type="date" id="idade" name="idade" value="@Model.idade.Date">
+
+    </div>
+
+    <div id="email">
+
+        <label for="iemail"> E-mail </label>
+        <input type="email" id="iemail" name="email" value="@Model.email" size="110">
+
+    </div>
+
+    <div id="endereco">
+
+        <label for="iendereco"> Endereço </label>
+        <input type="text" id="iendereco" name="endereco" value="@Model.endereco" size="130">
+
+    </div>
+
+    <div id="outrasinfo">
+
+        <label for="ioutrasinfo"> Outras informações </label>
+        <input type="text" id="ioutrasinfo" name="outrasinfo" value="@Model.outrasInfo" size="130">
+
+    </div>
+
+    <div id="telefone">
+
+        <label for="itelefone"> Telefone </label>
+        <input type="number" id="itelefone" name="telefone" value="@Model.telefone" placeholder="(  ) -_ ____-____" size="130">
+
+    </div>
+
+    <h2 id="interesse"> 2° Interesses </h2>
+
+    <div id="interesses">
+
+        <textarea id="iinteresses" name="interesses" cols="125" rows="5"> @Model.interesses </textarea>
+
+    </div>
+
+    <h2 id="sentimento"> 3° Sentimentos </h2>
+
+    <div id="sentimentos">
+        <textarea id="isentimentos" name="sentimentos" cols="125" rows="5"> @Model.sentimentos </textarea>
+    </div>
+
+    <h2 id="valor"> 4° Valores </h2>
+
+    <div id="valores">
+        <textarea typeof="text" id="ivalores" name="valores" cols="125" rows="5"> @Model.valores </textarea>
+    </div>
+
+    <p>
+        <input type="submit" value="GRAVAR" onclick="validarNome()">
+        <input type="reset" value="LIMPAR">
+    </p>
+
+</form>
+

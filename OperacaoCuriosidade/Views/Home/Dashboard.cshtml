@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<link href="~/Content/styleDashboard.css" rel="stylesheet" />
+
+<section>
+    <div id="tdec">
+
+        <h2> @ViewBag.TotalColaborador </h2>
+        <p>Total de cadastros</p>
+
+    </div>
+
+    <div id="cnoum">
+
+        <h2> @ViewBag.TotalHoje </h2>
+        <p>Cadastros Hoje</p>
+
+    </div>
+
+    <div id="cpr">
+
+        <h2> @ViewBag.TotalDias</h2>
+        <p>Cadastros 30 dias </p>
+
+    </div>
+</section>
+
+<section id="ultimosC">
+
+    <table>
+        <caption> Últimos cadastros </caption>
+        <thead>
+            <tr>
+                <th scope="col" class="nome">NOME
+                <th scope="col" class="email">E-MAIL
+                <th scope="col" class="stats">TELEFONE
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var colaboradores in Model){ 
+           
+                <tr id="colaboradores-@colaboradores.id_colaborador">
+                    <td> @colaboradores.Nome
+                    <td> @colaboradores.email
+                    <td> @colaboradores.telefone    
+                </tr>
+             }
+
+        </tbody>
+
+    </table>
+
+</section>

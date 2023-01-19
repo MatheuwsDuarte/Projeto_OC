@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Listagem";
+}
+
+<link href="~/Content/styleListagem.css" rel="stylesheet" />
+<link href="~/Content/styleImprimir.css" rel="stylesheet" media="print"/>
+
+<section id="listagem">
+
+    <table>
+
+        <caption>
+            Relatórios > Lista de usuários
+            <form>
+                <input type="button" value="IMPRIMIR" onclick="window.print()">
+            </form>
+        </caption>
+
+        <thead>
+
+            <tr>
+
+                <th scope="col" class="nome">NOME </th>
+                <th scope="col" class="email">E-MAIL  </th>
+                <th scope="col" class="stats">TELEFONE  </th>
+                <th > </th> 
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @foreach (var colaboradores in Model){
+                <tr id="colaboradores-@colaboradores.id_colaborador">
+
+                    <td> @colaboradores.Nome</td>
+                    <td> @colaboradores.email </td>
+                    <td> @colaboradores.telefone </td>
+                    <td> <a id="edit" href="@Url.Action("Edit", new {id=@colaboradores.id_colaborador })"> Editar</a> </td>
+                    <td> <a id="remove" href="@Url.Action("Remove", new {id=@colaboradores.id_colaborador })"> Remover </a> </td>
+
+                </tr>
+
+             }
+        </tbody>
+
+    </table>
+
+</section>
+
+
+    
+
